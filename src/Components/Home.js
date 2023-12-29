@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { getUsers } from '../Redux/Action'
 import { Checkbox, Paper, Typography } from '@mui/material'
-import { red } from '@mui/material/colors'
 import Users from './Users'
 import Bankbalance from './Bankbalance'
 import Eyecolor from './Eyecolor'
@@ -11,7 +10,7 @@ import Weight from './Weight'
 import Gender from './Gender'
 import Car from './Car'
 import SouthIcon from '@mui/icons-material/South'; const Home = () => {
-    const { data, loading, error } = useSelector(s => s.users)
+    const { data } = useSelector(s => s.users)
     const dispatch = useDispatch()
     const [checked, setChecked] = useState([false, false, false, false, false, false, false])
     console.log(checked)

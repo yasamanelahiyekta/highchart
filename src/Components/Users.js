@@ -1,8 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux'
-import { getUsers } from '../Redux/Action'
-import { Box, Card, Checkbox, Paper, Typography } from '@mui/material'
-import { red } from '@mui/material/colors'
+import React from 'react'
+import { Box, Card, Typography } from '@mui/material'
 
 const Users = ({ flagg, list }) => {
     console.log(list);
